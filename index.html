@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f7fb">
+  <meta name="description" content="Straightforward plans for every stage of your team's growth.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Simple, flexible pricing</title>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="pricing-page">
+    <header class="page-header">
+      <a class="wordmark" href="#" aria-label="Forma home">
+        <span class="wordmark-mark" aria-hidden="true">f</span>
+        <span>forma</span>
+      </a>
+      <a class="header-link" href="#plans">Explore plans <span aria-hidden="true">↓</span></a>
+    </header>
+
+    <section class="pricing-section" aria-labelledby="pricing-title">
+      <div class="intro">
+        <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> PRICING THAT GROWS WITH YOU</p>
+        <h1 id="pricing-title">Make room for <span>what's next.</span></h1>
+        <p class="intro-copy">Simple plans, thoughtful tools, and no surprises. Pick the pace that works for you.</p>
+
+        <fieldset class="billing-control">
+          <legend class="visually-hidden">Choose a billing interval</legend>
+          <label class="billing-option">
+            <input type="radio" name="billing-interval" value="monthly" checked>
+            <span>Monthly</span>
+          </label>
+          <label class="billing-option">
+            <input type="radio" name="billing-interval" value="annual">
+            <span>Yearly <span class="billing-perk">Save up to 25%</span></span>
+          </label>
+        </fieldset>
+      </div>
+
+      <div class="plans" id="plans">
+        <article class="plan-card" data-plan="starter" data-monthly="12" data-annual="9">
+          <div class="plan-heading">
+            <span class="plan-icon starter-icon" aria-hidden="true"><span></span></span>
+            <h2>Starter</h2>
+          </div>
+          <p class="plan-description">The essentials to get your ideas moving.</p>
+          <div class="price-block">
+            <p class="price-line"><span class="currency">$</span><span class="price-value">12</span><span class="price-period">/ month</span></p>
+            <p class="billing-note" aria-live="polite">Billed monthly</p>
+            <p class="savings-note" aria-live="polite" hidden></p>
+          </div>
+          <button class="plan-cta secondary-cta" type="button" aria-pressed="false">Choose Starter <span aria-hidden="true">→</span></button>
+          <p class="features-label">What's included</p>
+          <ul class="feature-list">
+            <li><span class="check" aria-hidden="true">✓</span> Up to 3 projects</li>
+            <li><span class="check" aria-hidden="true">✓</span> Essential analytics</li>
+            <li><span class="check" aria-hidden="true">✓</span> 1 team member</li>
+            <li><span class="check" aria-hidden="true">✓</span> Community support</li>
+          </ul>
+        </article>
+
+        <article class="plan-card recommended" data-plan="professional" data-monthly="29" data-annual="22">
+          <span class="recommended-badge">MOST POPULAR</span>
+          <div class="plan-heading">
+            <span class="plan-icon professional-icon" aria-hidden="true"><span></span></span>
+            <h2>Professional</h2>
+          </div>
+          <p class="plan-description">More room to collaborate and do your best work.</p>
+          <div class="price-block">
+            <p class="price-line"><span class="currency">$</span><span class="price-value">29</span><span class="price-period">/ month</span></p>
+            <p class="billing-note" aria-live="polite">Billed monthly</p>
+            <p class="savings-note" aria-live="polite" hidden></p>
+          </div>
+          <button class="plan-cta primary-cta" type="button" aria-pressed="false">Choose Professional <span aria-hidden="true">→</span></button>
+          <p class="features-label">Everything in Starter, plus</p>
+          <ul class="feature-list">
+            <li><span class="check" aria-hidden="true">✓</span> Unlimited projects</li>
+            <li><span class="check" aria-hidden="true">✓</span> Advanced analytics</li>
+            <li><span class="check" aria-hidden="true">✓</span> Up to 10 team members</li>
+            <li><span class="check" aria-hidden="true">✓</span> Priority support</li>
+          </ul>
+        </article>
+
+        <article class="plan-card" data-plan="business" data-monthly="59" data-annual="45">
+          <div class="plan-heading">
+            <span class="plan-icon business-icon" aria-hidden="true"><span></span></span>
+            <h2>Business</h2>
+          </div>
+          <p class="plan-description">Powerful workflows for teams ready to scale.</p>
+          <div class="price-block">
+            <p class="price-line"><span class="currency">$</span><span class="price-value">59</span><span class="price-period">/ month</span></p>
+            <p class="billing-note" aria-live="polite">Billed monthly</p>
+            <p class="savings-note" aria-live="polite" hidden></p>
+          </div>
+          <button class="plan-cta secondary-cta" type="button" aria-pressed="false">Choose Business <span aria-hidden="true">→</span></button>
+          <p class="features-label">Everything in Professional, plus</p>
+          <ul class="feature-list">
+            <li><span class="check" aria-hidden="true">✓</span> Unlimited team members</li>
+            <li><span class="check" aria-hidden="true">✓</span> Custom reports</li>
+            <li><span class="check" aria-hidden="true">✓</span> Advanced permissions</li>
+            <li><span class="check" aria-hidden="true">✓</span> Dedicated support</li>
+          </ul>
+        </article>
+      </div>
+
+      <p class="selection-status" role="status" aria-live="polite"></p>
+      <p class="reassurance"><span aria-hidden="true">✦</span> No credit card required <span class="reassurance-divider" aria-hidden="true">·</span> Change or cancel anytime</p>
+    </section>
+  </main>
+</body>
+</html>
